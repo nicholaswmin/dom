@@ -13,19 +13,20 @@ This tiny wrapper:
 
 w/o messing with native prototypes.
 
-## Why these 3 methods?
+## why
 
-They're the ones *we* commonly use 80% of the time.   
-I sometimes need to write demo/usage HTML files for 
-WebComponents.  
+I sometimes need to write a small demo/usage HTML files for.. 
+say a WebComponent.   
 I want these demo files to be stupidly simple w/o dependencies   
-but the verbosity of the native API makes it unergonomic & clutters
-up the file.
+but the verbosity of the native API makes it unergonomic & clutters up the file.
+
+Ergo, this.
 
 On the other hand, if I were to keep adding stuff here, 
-I might as well just use jQuery or an actual MVC framework.
+I might as well just use jQuery or an actual MVC framework. 
+That's why it's just 3 methods.
 
-Just modify the source with your own methods if you need to.
+You can modify the source with your own methods if you need to.
 
 [demo/sandbox][website]
 
