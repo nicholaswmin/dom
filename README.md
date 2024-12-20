@@ -15,10 +15,10 @@ w/o messing with native prototypes.
 
 ## Why these 3 methods?
 
-They're the ones *we* commonly use 80% of the time.
+They're the ones *we* commonly use 80% of the time.   
 I sometimes need to write demo/usage HTML files for 
 WebComponents.
-I want these demo files to be stupidly simple & w/o dependencies   
+I want these demo files to be stupidly simple w/o dependencies   
 but the verbosity of the native API makes it unergonomic & clutters
 up the file.
 
