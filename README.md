@@ -4,26 +4,26 @@
 
 > fluent DOM in ~400 bytes
 
-The native [DOM API][dom-api] is *extremely* verbose.    
-
-This is just a tiny wrapper around it, that:
+The native [DOM API][dom-api] is very verbose.
+This is a tiny wrapper that:
 
 - adds concise `$('selector')` selectors
 - adds concise `on('event', fn)`,`off('event', fn)`,`css(styles)` methods. 
 - enables [method chaining][fluent-api]. 
 
-without messing with native prototypes.
+w/o messing with native prototypes.
 
 ## Why these 3 methods?
 
-They're the ones *we* commonly use 80% of the time
-when writing  demo HTMLs for WebComponents.
+They're the ones *we* commonly use 80% of the time.  
+I want demo files that are stupidly simple w/o dependencies,
+but the verbosity of the native API makes it unergonomic.
 
-If I were to keep adding, I might as well just use jQuery or
-an actual MVC framework.
+On the other hand, if I were to keep adding stuff here, 
+I might as well just use jQuery or an actual MVC framework.
 
-The source is tiny and can be modified very easily
-if you need to but doing so probably misses the point.
+The source is tiny and can be modified very easily,
+if you need. 
 
 [demo/sandbox][website]
 
