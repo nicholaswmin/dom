@@ -17,11 +17,13 @@ without messing with native prototypes.
 ## Why these 3 methods?
 
 They're the ones *we* commonly use 80% of the time
-when writing small example HTMLs.  
-If I were to keep adding I might as well just use jQuery.
+when writing  demo HTMLs for WebComponents.
+
+If I were to keep adding, I might as well just use jQuery or
+an actual MVC framework.
 
 The source is tiny and can be modified very easily
-if you need to but dooing so kinda misses the point.
+if you need to but doing so probably misses the point.
 
 [demo/sandbox][website]
 
