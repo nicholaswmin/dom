@@ -28,18 +28,19 @@ $.$$('div') // select all divs
 $.$('div') // select first matching
 ```
 
-flip CSS properties:
+CSS properties:
 
 ```js
 $.$$('div').css({ background: 'red' })
 // all divs are now red
 ```
 
-listen for events:
+event listeners:
 
 ```js
 c.on('click', function(e) {
-  this.css({ color: 'red', cursor: 'pointer' }) // set color to red
+  this.css({ color: 'red', cursor: 'pointer' })
+  // set styles
 })
 .on('mouseover', function(e) {
   // is chainable
@@ -50,11 +51,24 @@ c.on('click', function(e) {
 remove listeners:
 
 ```js
-// remove all click listeners for all divs
+// remove all click listeners
 $.$$('div').off('click')
 
-// remove all listeners for all divs
+// remove all listeners, for all divs
 $.$$('div').off()
+```
+
+actual DOM elements:
+
+```js
+// actual DOM element
+$.$('div').$ 
+
+// actual DOM elements
+$.$$('div').$$ 
+
+// example
+$.$('div').$ .textContent = 'hello world'
 ```
 
 ## run dev/demo
