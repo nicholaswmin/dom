@@ -31,7 +31,7 @@ $.$('div') // select first matching
 CSS properties:
 
 ```js
-$.$$('div').css({ background: 'red' })
+$.$$('div').css({ background: 'red' })  
 // all divs are now red
 ```
 
