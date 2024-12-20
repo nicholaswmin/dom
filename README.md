@@ -4,6 +4,8 @@
 
 > fluent DOM in ~400 bytes
 
+[example][website]
+
 The native [DOM API][dom-api] is very verbose.
 This tiny wrapper:
 
@@ -28,8 +30,6 @@ I might as well just use jQuery or an actual MVC framework.
 That's why it's good-enough with just 3 methods.
 
 You can modify the source with your own methods if you need to.
-
-[demo/sandbox][website]
 
 ## install
 
