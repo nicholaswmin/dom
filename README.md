@@ -4,8 +4,24 @@
 
 > fluent DOM in ~400 bytes
 
-adds `${selector}`, `on`,`off`,`css` chainable methods   
-for quick DOM operations without the verbosity of the native API.
+The native [DOM API][dom-api] is *extremely* verbose.    
+
+This is just a tiny wrapper around it, that:
+
+- adds concise `$('selector')` selectors
+- adds concise `on('event', fn)`,`off('event', fn)`,`css(styles)` methods. 
+- enables [method chaining][fluent-api]. 
+
+without messing with native prototypes.
+
+## Why these 3 methods?
+
+They're the ones *we* commonly use 80% of the time
+when writing small example HTMLs.  
+If I were to keep adding I might as well just use jQuery.
+
+The source is tiny and can be modified very easily
+if you need to but dooing so kinda misses the point.
 
 [demo/sandbox][website]
 
@@ -68,7 +84,7 @@ $.$('div').$
 $.$$('div').$$ 
 
 // example
-$.$('div').$ .textContent = 'hello world'
+$.$('div').$.textContent = 'hello world'
 ```
 
 ## run dev/demo
@@ -99,10 +115,12 @@ node --test
 
 ## license
 
-[The ISC License][isc]
+[ISC License][isc]
 
 [test-badge]: https://github.com/nicholaswmin/dom/actions/workflows/test.yml/badge.svg
 [test-workflow]: https://github.com/nicholaswmin/dom/actions/workflows/test.yml
 [website]: https://nicholaswmin.github.io/dom
 [nicholaswmin]: https://githhub.com/nicholaswmin
+[fluent-api]: https://en.wikipedia.org/wiki/Fluent_interface
+[dom-api]: https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction
 [isc]: https://spdxt.org/licenses/ISC
