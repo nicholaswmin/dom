@@ -15,8 +15,8 @@ w/o messing with native prototypes.
 
 ## why
 
-I sometimes need to write a small demo/usage HTML files for.. 
-say a WebComponent.   
+I sometimes need to write a demo/usage HTML snippet file for.. 
+say a new WebComponent I'm authoring. 
 I want these demo files to be stupidly simple w/o dependencies   
 but the verbosity of the native API makes it unergonomic & clutters up the file.
 
