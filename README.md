@@ -15,9 +15,12 @@ w/o messing with native prototypes.
 
 ## Why these 3 methods?
 
-They're the ones *we* commonly use 80% of the time.  
-I want demo files that are stupidly simple w/o dependencies,
-but the verbosity of the native API makes it unergonomic.
+They're the ones *we* commonly use 80% of the time.
+I sometimes need to write demo/usage HTML files for 
+WebComponents.
+I want these demo files to be stupidly simple & w/o dependencies   
+but the verbosity of the native API makes it unergonomic & clutters
+up the file.
 
 On the other hand, if I were to keep adding stuff here, 
 I might as well just use jQuery or an actual MVC framework.
