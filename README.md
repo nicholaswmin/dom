@@ -5,7 +5,7 @@
 > fluent DOM in ~400 bytes
 
 The native [DOM API][dom-api] is very verbose.
-This is a tiny wrapper that:
+This tiny wrapper:
 
 - adds concise `$('selector')` selectors
 - adds concise `on('event', fn)`,`off('event', fn)`,`css(styles)` methods. 
@@ -22,8 +22,7 @@ but the verbosity of the native API makes it unergonomic.
 On the other hand, if I were to keep adding stuff here, 
 I might as well just use jQuery or an actual MVC framework.
 
-The source is tiny and can be modified very easily,
-if you need. 
+Just modify the source with your own methods if you need to.
 
 [demo/sandbox][website]
 
