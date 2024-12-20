@@ -1,3 +1,5 @@
+[![test-workflow][test-badge]][test-workflow]
+
 # dom.js
 
 > fluent DOM in ~400 bytes
@@ -14,13 +16,18 @@ node --run demo
 
 ## test
 
-```bash
- # install deps
-npm i
+install deps
 
- # run unit tests
+```bash
+npm i
+```
+
+run unit tests
+
+```bash
 node --test
 ```
+
 > requires: node `v22+`
 
 ## authors
@@ -31,6 +38,8 @@ node --test
 
 [The ISC License][isc]
 
+[test-badge]: https://github.com/nicholaswmin/dom/actions/workflows/test.yml/badge.svg
+[test-workflow]: https://github.com/nicholaswmin/dom/actions/workflows/test.yml
 [website]: https://nicholaswmin.github.io/dom
 [nicholaswmin]: https://githhub.com/nicholaswmin
 [isc]: spdxt.org/licenses/ISC
