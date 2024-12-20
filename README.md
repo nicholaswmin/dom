@@ -15,16 +15,17 @@ w/o messing with native prototypes.
 
 ## why
 
-I sometimes need to write a demo/usage HTML snippet file for.. 
-say a new WebComponent I'm authoring. 
-I want these demo files to be stupidly simple w/o dependencies   
-but the verbosity of the native API makes it unergonomic & clutters up the file.
+I often need to write a demo/usage HTML snippet file for.. 
+say a WebComponent I'm authoring.   
+You want these demo snippets to be stupidly simple w/o dependencies so as
+not to detract from the actual component, but the verbosity of the 
+native API makes it unergonomic & clutters up the file.   
 
 Ergo, this.
 
 On the other hand, if I were to keep adding stuff here, 
 I might as well just use jQuery or an actual MVC framework. 
-That's why it's just 3 methods.
+That's why it's good-enough with just 3 methods.
 
 You can modify the source with your own methods if you need to.
 
@@ -126,6 +127,6 @@ node --test
 [test-workflow]: https://github.com/nicholaswmin/dom/actions/workflows/test.yml
 [website]: https://nicholaswmin.github.io/dom
 [nicholaswmin]: https://githhub.com/nicholaswmin
-[fluent-api]: https://en.wikipedia.org/wiki/Fluent_interface
+[fluent-api]: https://en.wikipedia.org/wiki/Method_chaining
 [dom-api]: https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction
 [isc]: https://spdxt.org/licenses/ISC
