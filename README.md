@@ -17,7 +17,7 @@ w/o messing with native prototypes.
 
 They're the ones *we* commonly use 80% of the time.   
 I sometimes need to write demo/usage HTML files for 
-WebComponents.
+WebComponents.  
 I want these demo files to be stupidly simple w/o dependencies   
 but the verbosity of the native API makes it unergonomic & clutters
 up the file.
