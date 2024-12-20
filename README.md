@@ -2,9 +2,9 @@
 
 > fluent DOM in ~400 bytes
 
-[live][website]
+[demo/sandbox][website]
 
-@todo describe it
+> @todo describe, add usage info etc
 
 ## run dev/demo
 
@@ -25,7 +25,7 @@ node --test
 
 ## authors
 
-[nicholaswmin][@nicholaswmin]
+[@nicholaswmin][nicholaswmin]
 
 ## license
 
