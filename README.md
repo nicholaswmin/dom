@@ -103,13 +103,8 @@ $.$$('div').$$
 $.$('div').$.textContent = 'hello world'
 ```
 
-## run demo
 
-```bash
-node --run demo
-```
-
-## test
+## tests
 
 install deps:
 
@@ -125,6 +120,13 @@ node --import ./test/setup.js --experimental-test-isolation=none --test
 
 > requires: node `v22+`
 
+## misc
+
+> serve demo
+
+```bash
+npx serve
+```
 
 ## license
 
