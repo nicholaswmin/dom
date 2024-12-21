@@ -11,7 +11,7 @@ This tiny wrapper:
 
 - adds concise `$('selector')` selectors
 - adds concise `.on('event', fn)`,`.off('event', fn)` methods
-- adds a `.css(rules)` methods
+- adds a `.css(rules)` method
 - enables [method chaining][fluent-api]. 
 
 w/o messing with native prototypes.
@@ -27,7 +27,7 @@ unergonomic & clutters up the file.
 On the other hand, if I were to keep adding stuff here, 
 I might as well just use jQuery or an actual MVC framework. 
 
-Ergo, this. These 3 methods are good enough.
+Ergo, this. RThese 3 methods are good enough.
 
 You can modify the source with your own methods if you need to.
 
