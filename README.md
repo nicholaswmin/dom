@@ -17,9 +17,9 @@
 
 ## todo
 
-- [ ] fix CI tests
+- [x] fix CI tests
 - [ ] fix event tests
-- [ ] add a carbon snippet here
+- [x] add a carbon snippet here
 - [ ] snippetify that code thing
 
 ## rationale
