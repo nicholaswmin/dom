@@ -1,8 +1,6 @@
 
 [![test-workflow][test-badge]][test-workflow]
 
-# dom.js
-
 > concise [DOM API][dom-api] in `~ 400 bytes`
 
 <a href="https://nicholaswmin.github.io/dom">
@@ -13,7 +11,6 @@
 - concise event methods: `.on('event', fn)` / `.off('event', fn)`
 - an additional `css(..)` method.
 - [method-chaining][fluent-api]
-
 
 ## todo
 
