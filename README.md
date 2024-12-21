@@ -112,10 +112,10 @@ node --test
 
 ## license
 
-The ISC License
-
-@nicholaswmin, 2024
-
+> The [ISC License][isc]
+>
+> @nicholaswmin, 2024
+>
 > Permission to use, copy, modify, and /or distribute this software 
 > for *any* purpose, without fee, is hereby granted, provided that the 
 > above copyright notice and this permission notice appear in all copies.
@@ -127,4 +127,4 @@ The ISC License
 [nicholaswmin]: https://githhub.com/nicholaswmin
 [fluent-api]: https://en.wikipedia.org/wiki/Method_chaining
 [dom-api]: https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction
-[isc]: https://spdxt.org/licenses/ISC
+[isc]: https://spdx.org/licenses/ISC.html
