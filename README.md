@@ -10,7 +10,8 @@ The native [DOM API][dom-api] is very verbose.
 This tiny wrapper:
 
 - adds concise `$('selector')` selectors
-- adds concise `on('event', fn)`,`off('event', fn)`,`css(styles)` methods. 
+- adds concise `.on('event', fn)`,`.off('event', fn)` methods
+- adds a `.css(rules)` methods
 - enables [method chaining][fluent-api]. 
 
 w/o messing with native prototypes.
@@ -19,15 +20,14 @@ w/o messing with native prototypes.
 
 I often need to write a demo/usage HTML snippet file for.. 
 say a WebComponent I'm authoring.   
-You want these demo snippets to be stupidly simple w/o dependencies so as
-not to detract from the actual component, but the verbosity of the 
-native API makes it unergonomic & clutters up the file.   
-
-Ergo, this.
+You want these demo snippets to be stupidly simple so as not to detract from 
+the actual component, but the verbosity of the native API makes it 
+unergonomic & clutters up the file.   
 
 On the other hand, if I were to keep adding stuff here, 
 I might as well just use jQuery or an actual MVC framework. 
-That's why it's good-enough with just 3 methods.
+
+Ergo, this. These 3 methods are good enough.
 
 You can modify the source with your own methods if you need to.
 
