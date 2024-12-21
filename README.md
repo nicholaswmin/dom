@@ -39,7 +39,7 @@ The 3 methods covered here replace the most-common but unbearably verbose
 DOM API methods with consice, chainable equivalents.   
 
 It does 80% instead of 100% but there's nothing to memorise, 
-it's impossible to break & easy to figure out what their intent is,  
+it's impossible to break & easy to figure out what their intent is,
 even if you've never read a single word of this doc.
 
 ## usage
