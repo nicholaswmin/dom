@@ -24,10 +24,10 @@ You want these demo snippets to be stupidly simple so as not to detract from
 the actual component, but the verbosity of the native API makes it 
 unergonomic & clutters up the file.   
 
-On the other hand, if I were to keep adding stuff here, 
+On the other hand, if I were to keep adding utilities here, 
 I might as well just use jQuery or an actual MVC framework. 
 
-Ergo, this. RThese 3 methods are good enough.
+Ergo, this. These 3 methods are good enough.
 
 You can modify the source with your own methods if you need to.
 
