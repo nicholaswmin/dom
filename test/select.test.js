@@ -1,10 +1,10 @@
 import { test } from 'node:test'
-import { createPage, createButtons } from './utils.js'
+import { createPage, createButtons } from './util.js'
 
 test('#$.$("selector") - select single', async t => {
   t.after(() => browser.close())
 
-  const { browser, page } = await createPage('./index.html')
+  const { browser, page } = await createPage('../index.html')
 
   const result = await page.$eval('body', _ => $.$('body')?.$?.tagName)
   
@@ -18,7 +18,7 @@ test('#$.$("selector") - select single', async t => {
 
 test('#$.$$("selector") - select multiple', async t => {
   t.after(() => browser.close())
-  const { browser, page } = await createPage('./index.html')
+  const { browser, page } = await createPage('../index.html')
 
   await createButtons(page, { count: 2 })
 

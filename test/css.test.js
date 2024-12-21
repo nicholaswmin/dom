@@ -1,9 +1,9 @@
 import { test } from 'node:test'
-import { createPage, createButtons } from './utils.js'
+import { createPage, createButtons } from './util.js'
 
 test('#node.css(styles)', async t => {
   t.after(() => browser.close())
-  const { browser, page } = await createPage('./index.html')
+  const { browser, page } = await createPage('../index.html')
 
   await createButtons(page, { count: 1 })
 

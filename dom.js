@@ -4,18 +4,15 @@ class Listener {
   constructor (el, name, bound, ...arg) {
     if (!el.hasAttribute('data-id'))
       el.setAttribute('data-id', crypto.randomUUID()) 
-
     this.id = el.dataset.id
     this.el = el; this.name = name; this.bound = bound;
     this.el.addEventListener(name, bound, ...arg) 
   }
 
   off() { this.el.removeEventListener(this.name, this.bound); return this.id }
-  
-  matches(name, id) { 
-    return name 
-      ? this.name === name && this.el.getAttribute('data-id') === id 
-      : true
+
+  matches(name = this.name, id) { 
+    return this.name === name && this.id === id 
   }
 }
 
@@ -28,7 +25,7 @@ export class Node {
   
   on(name, fn, ...arg) { 
     if (this.#isArrowFn(fn))
-      throw new TypeError('Arrow funcs not supported. Use func. decl. instead.')
+      throw new TypeError('Arrow funcs not supported. Use func. declaration.')
     listeners.push(new Listener(this.el, name, fn.bind(this), ...arg))
     
     return this    
@@ -43,7 +40,7 @@ export class Node {
     this.el.removeAttribute('data-id')
   }
 
-  css(style) { 
+  css(style = {}) { 
     Object.assign(this.el.style, style)
     return this 
   }
@@ -55,9 +52,9 @@ export class NodeList {
   get $$() { return this.els }
 
   constructor(els) { this.els = Array.from(els).map(el => new Node(el)) }
-  css(...arg)  { this.els.map(el => el.css(...arg));   return this }
-  off (...arg) { this.els.map(el => el.off(...arg) );  return this }
-  on (...arg)  { this.els.map(el => el.on(...arg) );   return this }
+  css (...arg) { this.els.map(el => el.css(...arg));  return this }
+  off (...arg) { this.els.map(el => el.off(...arg));  return this }
+  on  (...arg) { this.els.map(el => el.on(...arg) );  return this }
 
   static {
     (globalThis || window)['$'] = {

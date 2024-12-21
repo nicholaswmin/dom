@@ -2,33 +2,47 @@
 
 # dom.js
 
-> fluent DOM in ~400 bytes
+enables concise & chainable DOM API operations.
 
-[example][website]
+Concise selectors `$('.foobar')`, event methods (`.on('event', fn)` /
+`.off('event', fn)`)
+plus an additional `css(..)` method.
 
-- adds concise `$('selector')` selectors
-- adds concise `.on('event', fn)`,`.off('event', fn)` methods
-- adds a `.css(rules)` method
-- enables [method chaining][fluent-api]. 
+supports method chaining without modifying native prototypes.
 
-w/o messing with native prototypes.
+basic example:
 
-## why
+```js
+// if any square is clicked
+$.$$('.square').on('cl3ick', function (e) {
+  // toggle it's color
+  this.css({ background: this.$.style.color === 'red' ? 'white' : 'red' });
+})
+.css({ cursor: 'pointer' });
 
-I often need to write a demo/usage HTML snippet file for.. 
-say a WebComponent I'm authoring.   
-You want these demo snippets to be stupidly simple so as not to detract from 
-the actual component, but the verbosity of the native API makes it 
-unergonomic & clutters up the file.   
+```
 
-On the other hand, if I were to keep adding utilities here, 
+## rationale
+
+I often need to write short HTML files as usage demos for various UI  
+components I might be authoring.  
+These demo files must be kept stupidly simple & dependency-free so as not 
+to detract from the actual component by adding additional complexity.
+Frameworks and dependencies are specifically avoided.
+
+However, the verbosity of the native DOM API is unergonomic & ends up 
+cluttering the file in and by itself.
+
+On the other hand, if I were to dump here each and every utility I need, 
 I might as well just use jQuery or an actual MVC framework. 
 
-Ergo, this. These 3 methods are good enough.
+Ergo, this.  
+The 3 methods covered here replace the most-common but unbearably 
+verbose DOM API methods with consice, chainable equivalents.
 
 You can modify the source with your own methods if you need to.
 
-## install
+## usage
 
 via CDN:
 
@@ -36,9 +50,10 @@ via CDN:
 <script type="module" src="https://cdn.jsdelivr.net/gh/nicholaswmin/dom@main/dom.js"></script>
 ```
 
-or just copy/paste the [source](./dom.js). Its intentionally tiny.
+or just copy/paste the [source](./dom.js) in your own project.    
+Its intentionally small & simple.
 
-## usage
+## examples
 
 selecting elements:
 
@@ -98,28 +113,30 @@ node --run demo
 
 ## test
 
+install deps:
+
 ```bash
 npm i
+```
 
-node --test
+run tests:
+
+```bash
+node --import ./test/setup.js --experimental-test-isolation=none --test
 ```
 
 > requires: node `v22+`
 
-## authors
-
-[@nicholaswmin][nicholaswmin]
 
 ## license
 
-> The [ISC License][isc]
+> [ISC License][isc]
 >
 > @nicholaswmin, 2024
 >
-> Permission to use, copy, modify, and /or distribute this software 
-> for *any* purpose, without fee, is hereby granted, provided that the 
-> above copyright notice and this permission notice appear in all copies.
-
+> Permission to use, copy, modify, and/or distribute or resell this software 
+> for *any purpose* is hereby granted *without fee*, provided that the above 
+> copyright notice and this permission notice appear in all copies.
 
 [test-badge]: https://github.com/nicholaswmin/dom/actions/workflows/test.yml/badge.svg
 [test-workflow]: https://github.com/nicholaswmin/dom/actions/workflows/test.yml

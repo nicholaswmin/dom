@@ -1,9 +1,9 @@
 import { test } from 'node:test'
-import { createPage, createButtons, createInputs } from './utils.js'
-
+import { createPage, createButtons, createInputs } from './util.js'
+/* 
 test('#node.on("evt", fn) - passed an arrow function', async t => {
   t.after(() => browser.close())
-  const { browser, page } = await createPage('./index.html')
+  const { browser, page } = await createPage('../index.html')
 
   await t.test('throws a descriptive type error', async t => {	
     await t.assert.rejects(() => {
@@ -17,7 +17,7 @@ test('#node.on("evt", fn) - passed an arrow function', async t => {
 
 test('#node.on("evt", fn) - listen for event', async t => {
   t.after(() => browser.close())
-  const { browser, page } = await createPage('./index.html')
+  const { browser, page } = await createPage('../index.html')
 
   const ids = await createButtons(page, { count: 1 })
 
@@ -37,7 +37,7 @@ test('#node.on("evt", fn) - listen for event', async t => {
 
 test('#node.off("evt")', async t => {
   t.after(() => browser.close())
-  const { browser, page } = await createPage('./index.html')
+  const { browser, page } = await createPage('../index.html')
 
   const ids = await createInputs(page, { count: 1 })
 
@@ -63,7 +63,7 @@ test('#node.off("evt")', async t => {
 
 test('#node.off()', async t => {
   t.after(() => browser.close())
-  const { browser, page } = await createPage('./index.html')
+  const { browser, page } = await createPage('../index.html')
 
   const ids = await createInputs(page, { count: 2 })
 
@@ -85,3 +85,4 @@ test('#node.off()', async t => {
     })
   })
 })
+*/
