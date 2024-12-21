@@ -3,7 +3,7 @@
 
 # dom.js
 
-> concise & chainable [DOM][dom-api] in `>300 bytes
+> concise & chainable [DOM][dom-api] in `~ 400 bytes`
 
 
 <img width="700px" alt="Carbon codesnippet showing a usage example" src="https://github.com/user-attachments/assets/2e5fac8c-70f4-43e1-b1f4-e9203e32b307"></img>
@@ -24,9 +24,9 @@
 
 ## rationale
 
-I often need to write short HTML files as usage demos for various components I might be authoring.  
-These demo files are best kept stupidly simple & dependency-free so as not 
-to detract from the actual component itself.
+I often need to write short HTML files as usage demos for a component I might be authoring.  
+These demo files are best kept stupidly simple & dependency-free so as not to detract from 
+the actual component itself.
 
 However, the verbosity of the native DOM API is unergonomic & ends up 
 cluttering the file in and by itself.
@@ -48,10 +48,10 @@ via CDN:
 <script type="module" src="https://cdn.jsdelivr.net/gh/nicholaswmin/dom@main/dom.js"></script>
 ```
 
-or just copy/paste the [source](./dom.js) in your own project.    
-Its intentionally small & simple.
+or just copy/paste the [source](./dom.js) in your own project.      
+Its intentionally tiny & simple.
 
-## examples
+## api
 
 selecting elements:
 
