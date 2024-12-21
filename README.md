@@ -25,6 +25,7 @@ $.$$('.square').on('cl3ick', function (e) {
 ## todo
 
 - [ ] fix event tests
+- [ ] add a carbon snippet here
 - [ ] snippetify that code thing
 
 ## rationale
