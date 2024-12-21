@@ -24,32 +24,35 @@
 
 ## rationale
 
-I often need to write short HTML files as usage demos for a component I might be authoring.  
-These demo files are best kept stupidly simple & dependency-free so as not to detract from 
-the actual component itself.
+I often need to write short HTML snippets as sandboxes for testing 
+a component I'm working on.   
+These snippet files are best kept stupidly simple & dependency-free so as not 
+to distract from the actual component itself.
 
-However, the verbosity of the native DOM API is unergonomic & ends up 
-cluttering the file in and by itself.
+However, the native DOM API is annoyingly verbose which ends up cluttering 
+the file in and by itself.
 
 On the other hand, if I were to dump here each and every utility I need, 
 I might as well just use jQuery or an actual MVC framework. 
 
-Ergo, this.  
-The 3 methods covered here replace the most-common but unbearably 
-verbose DOM API methods with consice, chainable equivalents.
-
-You can modify the source with your own methods if you need to.
+Ergo, this.   
+The 3 methods covered here replace the most-common but unbearably  
+verbose DOM API methods with consice, chainable equivalents.   
+It's does 80% instead of 100% but there's nothing to memorise,   
+it's almost impossible to break & easy to figure out the intent is,    
+even if you've never read a single word of this doc.
 
 ## usage
 
-via CDN:
+drop this:
 
 ```html
 <script type="module" src="https://cdn.jsdelivr.net/gh/nicholaswmin/dom@main/dom.js"></script>
 ```
 
-or just copy/paste the [source](./dom.js) in your own project.      
-Its intentionally tiny & simple.
+or just copy/paste the [source](./dom.js) in your own project. 
+
+I use it as an editor code-snippet.
 
 ## api
 
@@ -60,7 +63,7 @@ $.$$('div') // select all divs
 $.$('div') // select first matching
 ```
 
-CSS properties:
+style props:
 
 ```js
 $.$$('div').css({ background: 'red' })  
