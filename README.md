@@ -106,14 +106,6 @@ $.$('div').$.textContent = 'hello world'
 
 ## tests
 
-install deps:
-
-```bash
-npm i
-```
-
-run tests:
-
 ```bash
 node --import ./test/setup.js --experimental-test-isolation=none --test
 ```
