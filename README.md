@@ -93,7 +93,7 @@ $.$$('div').$$
 $.$('div').$.textContent = 'hello world'
 ```
 
-## run dev/demo
+## run demo
 
 ```bash
 node --run demo
@@ -101,15 +101,9 @@ node --run demo
 
 ## test
 
-install deps
-
 ```bash
 npm i
-```
 
-run unit tests
-
-```bash
 node --test
 ```
 
