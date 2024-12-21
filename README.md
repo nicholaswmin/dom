@@ -24,14 +24,14 @@ $.$$('.square').on('cl3ick', function (e) {
 
 ## todo
 
+- [ ] fix CI tests
 - [ ] fix event tests
 - [ ] add a carbon snippet here
 - [ ] snippetify that code thing
 
 ## rationale
 
-I often need to write short HTML files as usage demos for various UI  
-components I might be authoring.  
+I often need to write short HTML files as usage demos for various components I might be authoring.  
 These demo files must be kept stupidly simple & dependency-free so as not 
 to detract from the actual component by adding additional complexity.
 Frameworks and dependencies are specifically avoided.
