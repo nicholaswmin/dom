@@ -35,10 +35,11 @@ On the other hand, if I were to dump here each and every utility I need,
 I might as well just use jQuery or an actual MVC framework. 
 
 Ergo, this.   
-The 3 methods covered here replace the most-common but unbearably  
-verbose DOM API methods with consice, chainable equivalents.   
-It's does 80% instead of 100% but there's nothing to memorise,   
-it's almost impossible to break & easy to figure out the intent is,    
+The 3 methods covered here replace the most-common but unbearably verbose 
+DOM API methods with consice, chainable equivalents.   
+
+It does 80% instead of 100% but there's nothing to memorise,  
+it's impossible to break & easy to figure out what their intent is,    
 even if you've never read a single word of this doc.
 
 ## usage
