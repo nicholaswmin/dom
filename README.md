@@ -22,6 +22,11 @@ $.$$('.square').on('cl3ick', function (e) {
 
 ```
 
+## todo
+
+- [ ] fix event 
+- [ ] snippetify that code thing
+
 ## rationale
 
 I often need to write short HTML files as usage demos for various UI  
