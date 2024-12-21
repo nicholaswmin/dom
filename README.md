@@ -6,9 +6,6 @@
 
 [example][website]
 
-The native [DOM API][dom-api] is very verbose.
-This tiny wrapper:
-
 - adds concise `$('selector')` selectors
 - adds concise `.on('event', fn)`,`.off('event', fn)` methods
 - adds a `.css(rules)` method
