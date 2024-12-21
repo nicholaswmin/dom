@@ -5,6 +5,7 @@
 
 > concise & chainable [DOM][dom-api] in `~ 400 bytes`
 
+[live example][website]
 
 <img width="700px" alt="Carbon codesnippet showing a usage example" src="https://github.com/user-attachments/assets/2e5fac8c-70f4-43e1-b1f4-e9203e32b307"></img>
 
