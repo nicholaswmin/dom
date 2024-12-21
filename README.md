@@ -1,26 +1,19 @@
+
 [![test-workflow][test-badge]][test-workflow]
 
 # dom.js
 
-enables concise & chainable DOM API operations.
+> concise & chainable [DOM][dom-api] in `>300 bytes
 
-Concise selectors `$('.foobar')`, event methods (`.on('event', fn)` /
-`.off('event', fn)`)
-plus an additional `css(..)` method.
 
-supports method chaining without modifying native prototypes.
+<img width="700px" alt="Carbon codesnippet showing a usage example" src="https://github.com/user-attachments/assets/2e5fac8c-70f4-43e1-b1f4-e9203e32b307"></img>
 
-basic example:
 
-```js
-// if any square is clicked
-$.$$('.square').on('cl3ick', function (e) {
-  // toggle it's color
-  this.css({ background: this.$.style.color === 'red' ? 'white' : 'red' });
-})
-.css({ cursor: 'pointer' });
+- concise selectors: `$('.foobar')`
+- concise event methods: `.on('event', fn)` / `.off('event', fn)`
+- an additional `css(..)` method.
+- [method-chaining][fluent-api]
 
-```
 
 ## todo
 
@@ -32,9 +25,8 @@ $.$$('.square').on('cl3ick', function (e) {
 ## rationale
 
 I often need to write short HTML files as usage demos for various components I might be authoring.  
-These demo files must be kept stupidly simple & dependency-free so as not 
-to detract from the actual component by adding additional complexity.
-Frameworks and dependencies are specifically avoided.
+These demo files are best kept stupidly simple & dependency-free so as not 
+to detract from the actual component itself.
 
 However, the verbosity of the native DOM API is unergonomic & ends up 
 cluttering the file in and by itself.
