@@ -112,7 +112,14 @@ node --test
 
 ## license
 
-[ISC License][isc]
+The ISC License
+
+@nicholaswmin, 2024
+
+> Permission to use, copy, modify, and /or distribute this software 
+> for *any* purpose, without fee, is hereby granted, provided that the 
+> above copyright notice and this permission notice appear in all copies.
+
 
 [test-badge]: https://github.com/nicholaswmin/dom/actions/workflows/test.yml/badge.svg
 [test-workflow]: https://github.com/nicholaswmin/dom/actions/workflows/test.yml
